@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<HTML> <HEAD>
+<TITLE>REGISTRATION DETAILS</TITLE> 
+<STYLE>
+H1{
+Color: blue;
+Font-size: 80px;
+text-align:center;
+font-type:Edwardian Script ITC;
+}
+H2{
+Color:BROWN;
+Font-size:35px;
+text-align:center;
+font-type:Edwardian Script ITC;
+}
+#button{
+margin-left:740px;}
+
+</STYLE>
+<SCRIPT>
+ function show()
+{
+var fname=document.getElementById("textname").value;
+var lname=document.getElementById("textlname").value;
+var ename=document.getElementById("textemail").value;
+
+var tname=document.getElementById("texttel").value;
+var cname=document.getElementById("cakes").value;
+var tcname=document.getElementById("Tcake").value;
+var tpname=document.getElementById("tp").value;
+var oname=document.getElementById("ORDERfor").value;
+var coname=document.getElementById("CITY").value;
+var ciname=document.getElementById("CIT").value;
+confirm("YOU HAVE ENTERED:"+"\n NAME:-"+fname+""+lname+"\n EMAIL:-"+ename+"\n  TEL NO:-"+tname+"\n CAKE SHOP-"+cname+"\n TYPE OF CAKE:-"+tcname+"\n PATTIS-"+tpname+"\n ADDRESS:-"+oname+"\n CITY:-"+coname+"\n\n DO YOU WANT TO CONFIRM THESE DETAILS ?");
+}
+function changeColor(val)
+{ 
+ if((val.value=="")||(val.value==null))
+{
+val.style.background="black";
+}
+else
+{
+val.style.background="#FFFFFF";
+}
+}
+</SCRIPT>
+</HEAD>
+<body bgcolor=black> 
+<form id="fileid" novalidate>
+<H1>USER REGISTRATION DETAILS<hr color="green" size="10"></hr></H1>
+<table border="0" width="100%">
+<tr>
+<td><a href="sample1.html"><left><b><FONT COLOR="orange">HOME</FONT></b></left></a></td>
+
+</tr>
+</table>
+<H2><CENTER>Please fill the following details and get registered !!</CENTER></H2><BR/><BR/>
+<TABLE align="center" border="2" bordercolor="white" cellpadding="10px" bgcolor="beige">
+<B>
+<TR>
+<TD COLSPAN="2"><CENTER><H2>ORDER CAKE ONLINE</H2></CENTER></TD>
+</TR> 
+<tr>
+<td>FIRST NAME:</td><td><INPUT TYPE="TEXT" ID="textname" PLACEHOLDER="ENTER YOUR NAME" required></td>
+</tr>
+<TR>
+<td>LAST NAME:</td><td><INPUT TYPE="TEXT" ID="textlname" PLACEHOLDER="ENTER YOUR LAST NAME" required></td>
+</TR>
+<tr>
+<td>E-MAIL ID:</td><td><INPUT TYPE="EMAIL" ID="textemail" PLACEHOLDER="ENTER YOUR EMAIL" required></td>
+</tr>
+
+<TR>
+<TD>CONTACT NUMBER:</TD><TD><INPUT TYPE="TEL" ID="texttel" PLACEHOLDER="ENTER YOUR PH.NO" required></TD>
+</TR>
+<TR>
+<TD>DATE:</TD><TD><INPUT TYPE="DATE"></TD>
+</TR>
+<TR>
+<TD>TIME:</TD><TD><INPUT TYPE="TIME"></TD>
+</TR>
+
+<TR>
+<TD>SELECT VEG OR NON.VEG</TD><TD><INPUT TYPE="RADIO">VEG<INPUT TYPE="RADIO">NON.VEG</TD>
+</TR>
+<TR>
+<TD>SELECT THE TYPE OF CAKE</TD>
+<TD><SELECT ID="Tcake">
+<OPTION VALUE="SELECT THE TYPE OF CAKE">SELECT THE TYPE OF CAKE</OPTION>
+<OPTION VALUE="LUXURY COLLECTIONS">LUXURY COLLECTIONS</OPTION>
+<OPTION VALUE="WEDDING CAKE">WEDDING CAKE</OPTION>
+<OPTION VALUE="PHOTO CAKE">PHOTO CAKE</OPTION>
+<OPTION VALUE=" CAKE">CAKE</OPTION>
+<OPTION VALUE="CUP CAKE">CUPCAKE</OPTION>
+<OPTION VALUE="CHOCO LAVA">CHOCO LAVA</OPTION>
+<OPTION VALUE="BROWNIE">BROWNIE</OPTION>
+<OPTION VALUE="CHOCO BOMB">CHOCO BOMB</OPTION>
+<OPTION VALUE="MUFFINS">MUFFINS</OPTION>
+</TD>
+</TR>
+<TR>
+<TD>SIZE OF CAKE</TD><TD><INPUT TYPE="RADIO">PASTRY<INPUT TYPE="RADIO">0.5 KG<INPUT TYPE="RADIO">1KG<INPUT TYPE="RADIO">1.5KG<INPUT TYPE="RADIO">2KG<INPUT TYPE="RADIO">5KG</TD>
+</TR>
+<TR>
+<TD>QUANTITY</TD><TD><INPUT TYPE="NUMBER" MIN="0" MAX="50"></TD>
+</TR>
+<TR>
+<TD>SELECT PATTIS</TD>
+<TD><SELECT ID="tp">
+<OPTION VALUE="SELECT TYPE OF PATTIS">SELECT TYPE OF PATTIS</OPTION>
+<OPTION VALUE="PANEER">PANEER</OPTION>
+<OPTION VALUE="ALOO">ALOO</OPTION>
+<OPTION VALUE="CHOCLATE">CHOCLATE</OPTION>
+<OPTION VALUE="CHICKEN">CHICKEN</OPTION>
+<OPTION VALUE="TOMATO">TOMATO</OPTION>
+<OPTION VALUE="ONION">ONION</OPTION>
+<OPTION VALUE="VEG">VEG</OPTION>
+<OPTION VALUE="NON VEG">NON VEG</OPTION>
+</TD>
+</TR>
+<TR>
+<TD>SELECT MODE</TD>
+<TD>
+<INPUT TYPE="CHECKBOX" VALUE="HOME DELIVERY" ID="typeh">HOME DELIVERY<INPUT TYPE="CHECKBOX" VALUE="WALK-IN" ID="wtype">WALK-IN
+</TD>
+</TR>
+<TR>
+<TD><LABEL FOR="ORDERfor">ADDRESS:</LABEL></TD>
+<TD><TEXTAREA rows="3" cols="16" id="ORDERfor" required>
+ENTER YOUR ADDRESS HERE</TEXTAREA></TD>
+</TR>
+<TR>
+<TD><LABEL FOR="CITY">CITY:</LABEL></TD>
+<TD><INPUT LIST="CIT" NAME="CIT" ID="CITY" required>
+<DATALIST ID="CIT">
+<OPTION VALUE="BELAPUR">
+<OPTION VALUE="OLD PANVEL">
+<OPTION VALUE="KHARGAR">
+<OPTION VALUE="KHANDESHWAR">
+<OPTION VALUE="PANVEL">
+<OPTION VALUE="PEN">
+<OPTION VALUE="KHANDA COLONY">
+<OPTION VALUE="VASHI">
+</DATALIST></BR>
+</TD>
+</TR>
+<TR>
+<TD>RATING OF CAKE</TD><TD><INPUT TYPE="RADIO">DELICIOUS<INPUT TYPE="RADIO">GOOD<INPUT TYPE="RADIO">AVERAGE</TD>
+</TR>
+<TR>
+<TD><INPUT ID="LOP" type="button" value="submit" onClick=show()></TD>
+<TD><INPUT TYPE="RESET"></TD></TR>
+</TABLE>
+</form>
+
+
+</BODY>
+</HTML>
+
